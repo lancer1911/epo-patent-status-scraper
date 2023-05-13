@@ -23,7 +23,7 @@ This Python script is a web scraper that is specifically designed to retrieve pa
    ```bash
    pip install -r requirements.txt
    ```
-5. Download the [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) that matches your installed Chrome version and place it in the same directory as the script.
+5. Download the [ChromeDriver](https://chromedriver.chromium.org/downloads) that matches your installed Chrome version and place it in the same directory as the script.
 
 ## Usage
 

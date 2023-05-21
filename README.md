@@ -33,7 +33,7 @@ This Python script is a web scraper that is specifically designed to retrieve pa
    ```
 2. You will be prompted to select an Excel file that contains the EP patent numbers. Make sure the file and patent numbers are ready before running the script.
 3. You will be asked to specify the column that contains the patent numbers (e.g., 'C').
-4. You will be asked to specify the row number to start from (normally 2, to avoid overwriting the header).
+4. You will be asked to specify the row number to start from (for first time type '2', to avoid overwriting the header).
 5. The script will then scrape the status of each patent and write it into a new column in the same Excel file.
 
 ## Notes

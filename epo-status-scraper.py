@@ -17,6 +17,7 @@ from tkinter import simpledialog
 import sys
 import platform
 import time
+import random
 
 root = tk.Tk()
 root.withdraw()
@@ -92,13 +93,20 @@ for i in range(target_row, max_row + 1):
     cell_obj = sheet.cell(row = i, column = target_column)
     cell_target = sheet.cell(row = i, column = target_column + 1)
     print("\n\033[37m\033[42m", i, ": \033[0m\033[32m", cell_obj.value, "\033[0m")
-    time.sleep(5)
+ 
+    sleep_time = random.randint(10, 15)
+    time.sleep(sleep_time)
+
     URL = str("https://register.epo.org")
     driver.get(URL)
 
     search_bar = driver.find_element_by_xpath("//*[@name='query']")
     search_bar.clear()
     search_bar.send_keys(cell_obj.value)
+
+    sleep_time = random.randint(5, 10)
+    time.sleep(sleep_time)
+    
     driver.find_element_by_xpath("//*[@type='submit']").click()
 
     status = "null"
